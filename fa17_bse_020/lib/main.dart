@@ -3,24 +3,6 @@ import 'package:fa17_bse_020/Simple.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Dice Rolling App'),
-        ),
-        body:Center(
-          child: Container(
-            child: Text('Home Page'),
-          )
-        ),
-      ),
-    );
-  }
-}
 class SimpleHard extends StatefulWidget {
   @override
   _SimpleHardState createState() => _SimpleHardState();
@@ -40,7 +22,7 @@ class _SimpleHardState extends State<SimpleHard> {
               RaisedButton(
                 onPressed: () {
                   Navigator.pushReplacement(context,
-                      MaterialPageRoute(builder: (context) =>Simple()));
+                      MaterialPageRoute(builder: (context) =>SimpleDice()));
                 },
                 child: Text(
                   'Simple',

@@ -1,21 +1,34 @@
 import 'package:flutter/material.dart';
 
-class Simple extends StatelessWidget {
+void main() {
+  return runApp(
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.greenAccent,
+        appBar: AppBar(
+          title: Text('Simple Dice Game'),
+          backgroundColor: Colors.teal,
+        ),
+        body: SimpleDice(),
+      ),
+    ),
+  );
+}
+
+class SimpleDice extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
-          backgroundColor: Colors.grey.shade900,
-          body: SafeArea(
-            child: Text(
-              'Simple',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
+    return Row(
+      children: <Widget>[
+        Expanded(
+          child: FlatButton(child: Image.asset('assets/images/dice1.png'),
           ),
-        ));
+        ),
+        Expanded(
+          child: FlatButton(child: Image.asset('assets/images/dice2.png'),
+          ),
+        ),
+      ],
+    );
   }
 }
