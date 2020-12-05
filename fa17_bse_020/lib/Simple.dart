@@ -52,7 +52,7 @@ class _SimpleDiceState extends State<SimpleDice> {
                               context: context,
                               title: 'Game Winer',
                               desc:
-                              'Left Dice Win game',
+                              'Left Dice Win the game',
                             ).show();
                           }
                           else if(countright>countleft){
@@ -60,7 +60,7 @@ class _SimpleDiceState extends State<SimpleDice> {
                               context: context,
                               title: 'Game Winer',
                               desc:
-                              'Right Dice game ',
+                              'Right Dice the game ',
                             ).show();
                           }
                           else{
@@ -68,7 +68,7 @@ class _SimpleDiceState extends State<SimpleDice> {
                               context: context,
                               title: 'Game Winer',
                               desc:
-                              'Both Dice are Same',
+                              'Both Dices are Same score',
                             ).show();
                           }
                           countleft=0;
