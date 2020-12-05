@@ -72,7 +72,7 @@ class SplashScreenState extends State<SplashScreen> {
     );
   }
   Future<Timer> loadData() async{
-        return new Timer(Duration(seconds: 3),onDoneLoading);
+        return new Timer(Duration(seconds: 6),onDoneLoading);
   } onDoneLoading() async{
         Navigator.of(context).pushReplacement(MaterialPageRoute(builder:  (context)=>MyApp()))    ;
       }
